@@ -7,6 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const fullscreenImg = document.querySelector('.fullscreen-img');
+      const fullscreen = document.querySelector('.fullscreen');
+
+      fullscreenImg.addEventListener('click', function() {
+        fullscreen.classList.toggle('active');
+      });
+
+      fullscreen.addEventListener('click', function() {
+        fullscreen.classList.remove('active');
+      });
+    });
+  </script>
 </head>
 <body>
   <app-root></app-root>
